@@ -1,0 +1,16 @@
+import turtle
+
+colors = ["red","pink", "white", "yellow", "green","blue"]
+
+t = turtle.Pen()
+t.speed(1000)
+turtle.bgcolor("black")
+
+for i in range(200):
+  t.pencolor(colors[i%6])   # colors listesindeki renklerden kaç tanesini kullanarak işlemi yapacağı
+  t.width(i/100 + 1)  # kalem kalınlığı
+  t.forward(i)
+  t.left(76)         # sola doğru ilerlerken çizginin açısı
+
+
+turtle.done()
